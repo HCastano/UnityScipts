@@ -32,10 +32,10 @@ public class MoveBox : MonoBehaviour
 
         transform.Translate(Vector3.forward * moveSpeed * Time.deltaTime);
 
-            if (thalmicMyo.pose==Pose.WaveIn) moveSpeed += moveAccel * Time.deltaTime;
+            if (thalmicMyo.pose==Pose.Fist) moveSpeed += moveAccel * Time.deltaTime;
             
 
-            if (thalmicMyo.pose==Pose.WaveOut) moveSpeed -= moveAccel * Time.deltaTime;
+            if (thalmicMyo.pose==Pose.FingersSpread) moveSpeed -= moveAccel * Time.deltaTime;
 
             
         
